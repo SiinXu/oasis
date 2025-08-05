@@ -64,8 +64,8 @@
           </SelectContent>
         </Select>
       </div>
-      <Textarea placeholder="描述您的产品概念和目标市场..." />
-      <Button>开始分析</Button>
+    <Textarea placeholder="描述您的产品概念和目标市场..." />
+    <Button>开始分析</Button>
     </div>
   </CardContent>
 </Card>
@@ -514,17 +514,17 @@ async def run_global_marketing_simulation(content, target_market, regions):
                 available_actions=available_actions,
             )
         else:
-            agent_graph = await generate_twitter_agent_graph(
+    agent_graph = await generate_twitter_agent_graph(
                 profile_path=f"./data/{region}_users.json",
-                model=openai_model,
-                available_actions=available_actions,
-            )
+        model=openai_model,
+        available_actions=available_actions,
+    )
         agent_graphs[region] = agent_graph
     
     # 运行多地区模拟
     results = {}
     for region, graph in agent_graphs.items():
-        env = make(
+    env = make(
             agent_graph=graph,
             platform=get_platform_type(region),
             database_path=f"./data/{region}_simulation.db",

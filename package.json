@@ -1,0 +1,27 @@
+{
+  "name": "axon-oasis",
+  "version": "1.0.0",
+  "description": "Axon - 全球平台营销预测模拟系统，基于 Oasis 多智能体技术",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm start",
+    "oasis": "python -m oasis",
+    "install-frontend": "cd frontend && npm install",
+    "install-all": "npm install && cd frontend && npm install"
+  },
+  "keywords": [
+    "axon",
+    "oasis",
+    "multi-agent",
+    "marketing",
+    "prediction",
+    "simulation"
+  ],
+  "author": "Axon Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/camel-ai/oasis"
+  }
+}
